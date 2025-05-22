@@ -12,7 +12,9 @@
     </div>
 
     <div>
-      <p>Bem vindo a aula de flask</p>
+      <p>Bem vindo {{context.usuario}} a aula de flask</p>
+      <p>Idade {{context.idade}}</p>
+      <a href="{{url_for('novapagina')}}">Nova pagina</a>
     </div>
   </body>
 </html>
